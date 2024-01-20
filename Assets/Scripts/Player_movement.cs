@@ -24,6 +24,8 @@ public class Player_Movement : MonoBehaviour
 
     public float destructionRadius = 5f;
 
+    public AudioSource glassSfx;
+
     Vector3 velocity;
     bool isGrounded;
 
@@ -115,6 +117,7 @@ public class Player_Movement : MonoBehaviour
             if (hit.collider.CompareTag("Destructible"))
             {
                 Destroy(hit.collider.gameObject);
+                glassSfx.Play();
             }
         }
     }
