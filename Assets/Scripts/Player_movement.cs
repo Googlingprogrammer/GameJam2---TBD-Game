@@ -25,6 +25,8 @@ public class Player_Movement : MonoBehaviour
     public float destructionRadius = 5f;
 
     public AudioSource glassSfx;
+    public AudioSource MusicBass;
+    public AudioSource SonicBoom;
 
     Vector3 velocity;
     bool isGrounded;
@@ -69,6 +71,7 @@ public class Player_Movement : MonoBehaviour
         if (carriedObject != null && Input.GetButtonDown("Fire1")) //Left Mouse Button
         {
             TriggerEffect();
+            SonicBoom.Play();
         }
 
         velocity.y += gravity * Time.deltaTime;
@@ -94,6 +97,9 @@ public class Player_Movement : MonoBehaviour
 
                 // Attach the object to the player's arm
                 carriedObject.transform.parent = AttachPoint;
+
+                MusicBass.volume = 1f;
+
             }
         }
     }
