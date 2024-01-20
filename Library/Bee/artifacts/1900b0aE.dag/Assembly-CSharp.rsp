@@ -353,6 +353,7 @@
 -analyzer:"C:/__GAMES AND STUFFS/2022.3.17f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"C:/__GAMES AND STUFFS/2022.3.17f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/Scripts/Fps_camera_test.cs"
+"Assets/Scripts/Glass.cs"
 "Assets/Scripts/Player_movement.cs"
 -langversion:9.0
 

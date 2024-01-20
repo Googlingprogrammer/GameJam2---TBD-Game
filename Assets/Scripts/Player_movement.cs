@@ -22,6 +22,8 @@ public class Player_Movement : MonoBehaviour
     private GameObject carriedObject;
     public float pickupRange = 3f;
 
+    public float destructionRadius = 5f;
+
     Vector3 velocity;
     bool isGrounded;
 
@@ -103,7 +105,17 @@ public class Player_Movement : MonoBehaviour
 
     void TriggerEffect()
     {
-        // Add your effect logic here
-        Debug.Log("Effect triggered!");
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hit;
+
+        // Check if the ray hits something
+        if (Physics.Raycast(ray, out hit, destructionRadius))
+        {
+            // Check if the hit object has the "Destructible" tag
+            if (hit.collider.CompareTag("Destructible"))
+            {
+                Destroy(hit.collider.gameObject);
+            }
+        }
     }
 }

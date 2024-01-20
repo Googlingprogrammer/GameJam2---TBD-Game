@@ -701,6 +701,68 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1550083566}
   m_CullTransparentMesh: 1
+--- !u!1001 &2055148095
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5156445956192231252, guid: 646fa6b81f8484a3e88d909e075e8868, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.9470415
+      objectReference: {fileID: 0}
+    - target: {fileID: 5156445956192231252, guid: 646fa6b81f8484a3e88d909e075e8868, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.9799986
+      objectReference: {fileID: 0}
+    - target: {fileID: 5156445956192231252, guid: 646fa6b81f8484a3e88d909e075e8868, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -7.7279177
+      objectReference: {fileID: 0}
+    - target: {fileID: 5156445956192231252, guid: 646fa6b81f8484a3e88d909e075e8868, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5156445956192231252, guid: 646fa6b81f8484a3e88d909e075e8868, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5156445956192231252, guid: 646fa6b81f8484a3e88d909e075e8868, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5156445956192231252, guid: 646fa6b81f8484a3e88d909e075e8868, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5156445956192231252, guid: 646fa6b81f8484a3e88d909e075e8868, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5156445956192231252, guid: 646fa6b81f8484a3e88d909e075e8868, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5156445956192231252, guid: 646fa6b81f8484a3e88d909e075e8868, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5856650946109046734, guid: 646fa6b81f8484a3e88d909e075e8868, type: 3}
+      propertyPath: m_Name
+      value: Glass
+      objectReference: {fileID: 0}
+    - target: {fileID: 5856650946109046734, guid: 646fa6b81f8484a3e88d909e075e8868, type: 3}
+      propertyPath: m_TagString
+      value: Destructible
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: -6166135909687921459, guid: 646fa6b81f8484a3e88d909e075e8868, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 646fa6b81f8484a3e88d909e075e8868, type: 3}
 --- !u!1001 &5271014997035257990
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -768,3 +830,4 @@ SceneRoots:
   - {fileID: 1390892861}
   - {fileID: 97002935}
   - {fileID: 953680934}
+  - {fileID: 2055148095}

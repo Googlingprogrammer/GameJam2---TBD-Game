@@ -65,6 +65,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Fps_camera_test.cs" />
+    <Compile Include="Assets\Scripts\Glass.cs" />
     <Compile Include="Assets\Scripts\Player_movement.cs" />
   </ItemGroup>
   <ItemGroup>
