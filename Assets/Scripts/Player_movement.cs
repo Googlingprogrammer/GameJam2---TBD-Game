@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Player_Movement : MonoBehaviour
@@ -24,9 +25,8 @@ public class Player_Movement : MonoBehaviour
 
     public float destructionRadius = 5f;
 
-    public AudioSource glassSfx;
-    public AudioSource MusicBass;
-    public AudioSource SonicBoom;
+    public GameObject MusicManager;
+    private AkEvent MusicEvent;
 
     Vector3 velocity;
     bool isGrounded;
@@ -71,7 +71,7 @@ public class Player_Movement : MonoBehaviour
         if (carriedObject != null && Input.GetButtonDown("Fire1")) //Left Mouse Button
         {
             TriggerEffect();
-            SonicBoom.Play();
+            AkSoundEngine.PostEvent("Play_SonicBoom", this.gameObject);
         }
 
         velocity.y += gravity * Time.deltaTime;
@@ -98,8 +98,7 @@ public class Player_Movement : MonoBehaviour
                 // Attach the object to the player's arm
                 carriedObject.transform.parent = AttachPoint;
 
-                MusicBass.volume = 1f;
-
+                AkSoundEngine.SetRTPCValue("BassVolume", 1, MusicManager);
             }
         }
     }
@@ -123,7 +122,9 @@ public class Player_Movement : MonoBehaviour
             if (hit.collider.CompareTag("Destructible"))
             {
                 Destroy(hit.collider.gameObject);
-                glassSfx.Play();
+                //remember this!!!!!!!!
+                AkSoundEngine.PostEvent("Play_Glass_Shatter", this.gameObject); 
+                //remember this!!!!!!!!
             }
         }
     }

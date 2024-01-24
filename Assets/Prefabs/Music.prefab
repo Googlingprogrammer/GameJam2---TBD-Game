@@ -100,7 +100,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: b8445351c3e91f447adab80019b371a8, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 136e8a78254153f42a5564dcaf3eeeb6, type: 2}
   useCallbacks: 0
   Callbacks: []
   playingId: 0
