@@ -402,7 +402,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 171220093443344f8248002a20df72a0
     GuidInternal: 
-    m_lastTime: -8584956702161110253
+    m_lastTime: -8584956684683162309
     List:
     - name: Main
       guid: 1bfb1f66e69e74439f41dbd0573cfa77
@@ -430,8 +430,25 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 4d503ca41289064fbd96f64dd542dfff
     GuidInternal: 
-    m_lastTime: -8584958254030029646
+    m_lastTime: -8584954837181261670
     List:
+    - name: All
+      guid: 27be2616a125e544af6fc0cb8510bf0d
+      id: 1100754030
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 4d503ca41289064fbd96f64dd542dfff
+      - ElementName: All
+        ObjectType: 4
+        guid: 27be2616a125e544af6fc0cb8510bf0d
+      Path: Events\Default Work Unit\All
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_FootStepCarpet
       guid: 9c2874129e323f44a6384d4609937208
       id: 1117259765
@@ -442,12 +459,15 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 4d503ca41289064fbd96f64dd542dfff
+      - ElementName: All
+        ObjectType: 4
+        guid: 27be2616a125e544af6fc0cb8510bf0d
       - ElementName: Play_FootStepCarpet
         ObjectType: 3
         guid: 9c2874129e323f44a6384d4609937208
-      Path: Events\Default Work Unit\Play_FootStepCarpet
+      Path: Events\Default Work Unit\All\Play_FootStepCarpet
       maxAttenuation: 0
-      maxDuration: 0.35535237
+      maxDuration: 0.35720453
       minDuration: 0.1871543
     - name: Play_Glass_Shatter
       guid: f77ed49333eb2a4c9c47b063ad795013
@@ -459,10 +479,13 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 4d503ca41289064fbd96f64dd542dfff
+      - ElementName: All
+        ObjectType: 4
+        guid: 27be2616a125e544af6fc0cb8510bf0d
       - ElementName: Play_Glass_Shatter
         ObjectType: 3
         guid: f77ed49333eb2a4c9c47b063ad795013
-      Path: Events\Default Work Unit\Play_Glass_Shatter
+      Path: Events\Default Work Unit\All\Play_Glass_Shatter
       maxAttenuation: 0
       maxDuration: 0.9916343
       minDuration: 0.9916343
@@ -476,16 +499,19 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 4d503ca41289064fbd96f64dd542dfff
+      - ElementName: All
+        ObjectType: 4
+        guid: 27be2616a125e544af6fc0cb8510bf0d
       - ElementName: Play_Install
         ObjectType: 3
         guid: 4e49c5ae03398f489af46da2e98858fb
-      Path: Events\Default Work Unit\Play_Install
+      Path: Events\Default Work Unit\All\Play_Install
       maxAttenuation: 0
       maxDuration: 0.26806858
       minDuration: 0.26806858
-    - name: Play_MusicBass
-      guid: 29b608da0a51bb4e84dfb1cdfa2e9fb0
-      id: 209629462
+    - name: Play_Level1Music
+      guid: 8d0fb2809b1e834cb0fdf6ad3a60c799
+      id: 3605952550
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -493,16 +519,19 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 4d503ca41289064fbd96f64dd542dfff
-      - ElementName: Play_MusicBass
+      - ElementName: All
+        ObjectType: 4
+        guid: 27be2616a125e544af6fc0cb8510bf0d
+      - ElementName: Play_Level1Music
         ObjectType: 3
-        guid: 29b608da0a51bb4e84dfb1cdfa2e9fb0
-      Path: Events\Default Work Unit\Play_MusicBass
+        guid: 8d0fb2809b1e834cb0fdf6ad3a60c799
+      Path: Events\Default Work Unit\All\Play_Level1Music
       maxAttenuation: 0
-      maxDuration: 17.454563
-      minDuration: 17.454563
-    - name: Play_MusicDemo1
-      guid: 70b5360d56f6f44ca516f5662e23ee72
-      id: 3520106223
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_SonicBoom
+      guid: 7bce7a77ead5f44294521ceeb46ca4a9
+      id: 196763655
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -510,16 +539,19 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 4d503ca41289064fbd96f64dd542dfff
-      - ElementName: Play_MusicDemo1
+      - ElementName: All
+        ObjectType: 4
+        guid: 27be2616a125e544af6fc0cb8510bf0d
+      - ElementName: Play_SonicBoom
         ObjectType: 3
-        guid: 70b5360d56f6f44ca516f5662e23ee72
-      Path: Events\Default Work Unit\Play_MusicDemo1
+        guid: 7bce7a77ead5f44294521ceeb46ca4a9
+      Path: Events\Default Work Unit\All\Play_SonicBoom
       maxAttenuation: 0
-      maxDuration: 17.454563
-      minDuration: 17.454563
-    - name: Stop_MusicBass
-      guid: bf28119586b96445bd7557ffd4060929
-      id: 2618033524
+      maxDuration: 3.6
+      minDuration: 3.6
+    - name: Stop_Level1Music
+      guid: 9286477d6c504a4eb46eedef2d9bc614
+      id: 698863348
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -527,27 +559,13 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 4d503ca41289064fbd96f64dd542dfff
-      - ElementName: Stop_MusicBass
+      - ElementName: All
+        ObjectType: 4
+        guid: 27be2616a125e544af6fc0cb8510bf0d
+      - ElementName: Stop_Level1Music
         ObjectType: 3
-        guid: bf28119586b96445bd7557ffd4060929
-      Path: Events\Default Work Unit\Stop_MusicBass
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
-    - name: Stop_MusicDemo1
-      guid: 1e5962fb61768d49a2ebc16cdcca1635
-      id: 3079659793
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 4d503ca41289064fbd96f64dd542dfff
-      - ElementName: Stop_MusicDemo1
-        ObjectType: 3
-        guid: 1e5962fb61768d49a2ebc16cdcca1635
-      Path: Events\Default Work Unit\Stop_MusicDemo1
+        guid: 9286477d6c504a4eb46eedef2d9bc614
+      Path: Events\Default Work Unit\All\Stop_Level1Music
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -563,8 +581,22 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 9fe2d91e6b7d2643930d446353437a2c
     GuidInternal: 
-    m_lastTime: -8584958382774982942
-    List: []
+    m_lastTime: -8584954845465050324
+    List:
+    - name: BassVolume
+      guid: 86f4b4f6fb2806449a82745a86eb12f7
+      id: 1392433830
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 9fe2d91e6b7d2643930d446353437a2c
+      - ElementName: BassVolume
+        ObjectType: 13
+        guid: 86f4b4f6fb2806449a82745a86eb12f7
+      Path: Game Parameters\Default Work Unit\BassVolume
   - PhysicalPath: Game Parameters\Factory Soundseed Air Game Syncs.wwu
     PathAndIcons:
     - ElementName: Game Parameters
@@ -761,7 +793,7 @@ MonoBehaviour:
     m_lastTime: -8584958382774600005
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0500000006000000070000001100000012000000
+  ExpandedWaapiItemIds: 0500000006000000070000000800000009000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

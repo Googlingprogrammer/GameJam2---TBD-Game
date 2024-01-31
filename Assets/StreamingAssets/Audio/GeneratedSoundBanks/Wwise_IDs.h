@@ -16,14 +16,14 @@ namespace AK
         static const AkUniqueID PLAY_FOOTSTEPCARPET = 1117259765U;
         static const AkUniqueID PLAY_GLASS_SHATTER = 3578185652U;
         static const AkUniqueID PLAY_INSTALL = 82120831U;
-        static const AkUniqueID PLAY_MUSICBASS = 209629462U;
-        static const AkUniqueID PLAY_MUSICDEMO1 = 3520106223U;
-        static const AkUniqueID STOP_MUSICBASS = 2618033524U;
-        static const AkUniqueID STOP_MUSICDEMO1 = 3079659793U;
+        static const AkUniqueID PLAY_LEVEL1MUSIC = 3605952550U;
+        static const AkUniqueID PLAY_SONICBOOM = 196763655U;
+        static const AkUniqueID STOP_LEVEL1MUSIC = 698863348U;
     } // namespace EVENTS
 
     namespace GAME_PARAMETERS
     {
+        static const AkUniqueID BASSVOLUME = 1392433830U;
         static const AkUniqueID SS_AIR_FEAR = 1351367891U;
         static const AkUniqueID SS_AIR_FREEFALL = 3002758120U;
         static const AkUniqueID SS_AIR_FURY = 1029930033U;
